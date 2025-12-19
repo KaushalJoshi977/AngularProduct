@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+.container { max-width: 800px; margin: 2rem auto; font-family: sans-serif; }
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Common Image CSS */
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+}
+
+/* Base button styles */
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Primary Color Variant */
+.btn-primary {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Hover State */
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Active (Click) State */
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+input { display: block; width: 100%; padding: 10px; margin: 10px 0; }
+button { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; }
